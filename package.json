@@ -13,7 +13,9 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "",
+    "nextjs",
+    "next",
+    "styled-components",
     "yeoman-generator"
   ],
   "devDependencies": {
