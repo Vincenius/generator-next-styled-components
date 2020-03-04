@@ -16,12 +16,16 @@ Then generate your new project:
 yo next-styled-components
 ```
 
-## Getting To Know Yeoman
+This will setup the project in your current directory.
+Afterward the dependencies will be installed.
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+To start the development server run:
+
+```bash
+npm run dev
+```
+
+For more information check the [Next.js documentation](https://nextjs.org/docs)
 
 ## License
 

@@ -30,10 +30,12 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copyTpl(
-      this.templatePath("nextapp/**/*"),
-      this.destinationPath(this.props.projectName),
-      { projectName: this.props.projectName }
-    );
+    this.fs.copyTpl(this.templatePath("nextapp/**/*"), this.destinationPath(), {
+      projectName: this.props.projectName
+    });
+  }
+
+  install() {
+    this.npmInstall();
   }
 };
