@@ -1,6 +1,6 @@
 {
   "name": "generator-next-styled-components",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A generator for nextjs apps using styled-components",
   "homepage": "",
   "author": {
