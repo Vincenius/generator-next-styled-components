@@ -1,13 +1,17 @@
-'use strict';
-const Generator = require('yeoman-generator');
-const chalk = require('chalk');
-const yosay = require('yosay');
+"use strict";
+const Generator = require("yeoman-generator");
+const chalk = require("chalk");
+const yosay = require("yosay");
 
 module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(
-      yosay(`Welcome to the legendary ${chalk.red('generator-next-styled-components')} generator!`)
+      yosay(
+        `Welcome to the legendary ${chalk.red(
+          "generator-next-styled-components"
+        )} generator!`
+      )
     );
 
     const prompts = [
@@ -16,7 +20,7 @@ module.exports = class extends Generator {
         name: "projectName",
         message: "Your project name",
         default: this.appname // Default to current folder name
-      },
+      }
     ];
 
     return this.prompt(prompts).then(props => {
@@ -27,7 +31,7 @@ module.exports = class extends Generator {
 
   writing() {
     this.fs.copyTpl(
-      this.templatePath('nextapp/**/*'),
+      this.templatePath("nextapp/**/*"),
       this.destinationPath(this.props.projectName),
       { projectName: this.props.projectName }
     );
